@@ -1,0 +1,159 @@
+<style>
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 20px;
+  height: 40px;
+}
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 66px;
+  font-size: 20px;
+  height: 40px;
+  width: 140px;
+}
+.topright2 {
+  position: absolute;
+  top: 8px;
+  right: 224px;
+  font-size: 20px;
+  height: 40px;
+  width: 140px;
+}
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+}
+.bottomright2 {
+  position: absolute;
+  bottom: 8px;
+  right: 124px;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+}
+h2 {
+  color: black;
+  font-family: verdana;
+  font-size: 15px;
+}
+p::first-letter {
+  font-weight: bold;
+}
+input[type=submit], input[type=reset] {
+  background-color: #4C4C4C;
+  color: white;
+  border: 1px solid #4C4C4C;
+  border-radius: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+input[type=button]{
+  background-color: #4C4C4C;
+  color: white;
+  border: 1px solid #4C4C4C;
+  height: 30px;
+  font-size: 14px;
+}
+div.header {
+  position: -webkit-sticky;
+  top: 0;
+  background-color:Tomato;
+  border: 2px solid Tomato;
+  height: 40px;
+}
+div.footer {
+  position: -webkit-sticky;
+  bottom: 0;
+  background-color:Tomato;
+  border: 2px solid Tomato;
+  height: 40px;
+}
+div.container {
+  padding: 5px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.video {
+  position: relative;
+  text-align: center;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  background-color: white;
+  border: 1px solid black;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+</style>
+
+<html><body>
+
+<div class="header">
+<form onsubmit="formExtractor.submitUpload()">
+  <div class="topleft"><input type="button" value="Dipole Antenna"></div>
+  <div class="topright"><input type="submit" value="Upload Resource"></div>
+</form>
+<form onsubmit="formExtractor.submitEdit()">
+  <div class="topright2"><input type="submit" value="Edit [Demo]"></div>
+</form>
+</div>
+
+
+<div class="container">
+<p align="center"><span style=" font-size:14pt; font-weight:600;">Half Wavelength Dipole</span><span style=" font-size:8pt;"> </span></p>
+<p>In radio and telecommunications a dipole antenna or doublet[1] is the simplest and most widely used class of antenna.[2][3] The dipole is any one of a class of antennas producing a radiation pattern approximating that of an elementary electric dipole with a radiating structure supporting a line current so energized that the current has only one node at each end.[4] A dipole antenna commonly consists of two identical conductive elements[5] such as metal wires or rods.[3][6][7] The driving current from the transmitter is applied, or for receiving antennas the output signal to the receiver is taken, between the two halves of the antenna. Each side of the feedline to the transmitter or receiver is connected to one of the conductors. This contrasts with a monopole antenna, which consists of a single rod or conductor with one side of the feedline connected to it, and the other side connected to some type of ground.[8] A common example of a dipole is the "rabbit ears" television antenna found on broadcast television sets. 
+The dipole is the simplest type of antenna from a theoretical point of view.[1] Most commonly it consists of two conductors of equal length oriented end-to-end with the feedline connected between them.[9][10] Dipoles are frequently used as resonant antennas. If the feedpoint of such an antenna is shorted, then it will be able to resonate at a particular frequency, just like a guitar string that is plucked. Using the antenna at around that frequency is advantageous in terms of feedpoint impedance (and thus standing wave ratio), so its length is determined by the intended wavelength (or frequency) of operation.[3] The most commonly used is the center-fed half-wave dipole which is just under a half-wavelength long. The radiation pattern of half-wave (or most other) dipoles is maximum perpendicular to the conductor, falling to zero in the axial direction, thus implementing an omnidirectional antenna if installed vertically, or (more commonly) a weakly directional antenna if horizontal.[11] 
+Although they may be used as standalone low-gain antennas, dipoles are also employed as driven elements in more complex antenna designs[3][5] such as the Yagi antenna and driven arrays. Dipole antennas (or such designs derived from them, including the monopole) are used to feed more elaborate directional antennas such as a horn antenna, parabolic reflector, or corner reflector. Engineers analyze vertical (or other monopole) antennas on the basis of dipole antennas of which they are one half. German physicist Heinrich Hertz first demonstrated the existence of radio waves in 1887 using what we now know as a dipole antenna (with capacitative end-loading). On the other hand, Guglielmo Marconi empirically found that he could just ground the transmitter (or one side of a transmission line, if used) dispensing with one half of the antenna, thus realizing the vertical or monopole antenna.[8] For the low frequencies Marconi employed to achieve long-distance communications, this form was more practical; when radio moved to higher frequencies (especially VHF transmissions for FM radio and TV) it was advantageous for these much smaller antennas to be entirely atop a tower thus requiring a dipole antenna or one of its variations. 
+In the early days of radio, the thus-named Marconi antenna (monopole) and the doublet (dipole) were seen as distinct inventions. Now, however, the "monopole" antenna is understood as a special case of a dipole[citation needed] which has a virtual element "underground". A folded dipole is a half-wave dipole with an additional parallel wire connecting its two ends. If the additional wire has the same diameter and cross-section as the dipole, two nearly identical radiating currents are generated. The resulting far-field emission pattern is nearly identical to the one for the single-wire dipole described above, but at resonance its feedpoint impedance R f.d. {\displaystyle R_{\text{f.d.}}} is four times the radiation resistance of a single-wire dipole. A folded “dipole” is, technically, a folded full-wave loop antenna, where the loop has been bent at opposing ends and squashed into two parallel wires in a flat line. Although the broad bandwidth, high feedpoint impedance, and high efficiency are characteristics more similar to a full loop antenna, the folded dipole's radiation pattern is more like an ordinary dipole. Since the operation of a single halfwave dipole is easier to understand, both a full loops and folded dipoles are often described as two halfwave dipoles in parallel, connected at the ends. 
+The high feedpoint impedance R f.d. {\displaystyle R_{\text{f.d.}}} at resonance is because for a fixed amount of power, the total radiating current I 0 {\displaystyle I_{0}} is equal to twice the current in each wire separately and thus equal to twice the current at the feed point. We equate the average radiated power to the average power delivered at the feedpoint, we may write. A dipole is omnidirectional in the plane perpendicular to the wire axis, with the radiation falling to zero on the axis (off the ends of the antenna). In a half-wave dipole the radiation is maximum perpendicular to the antenna, declining as ( sin ⁡ θ ) 2 {\displaystyle (\sin \theta )^{2}}  to zero on the axis. Its radiation pattern in three dimensions (see figure) would be plotted approximately as a toroid (doughnut shape) symmetric about the conductor. When mounted vertically this results in maximum radiation in horizontal directions. When mounted horizontally, the radiation peaks at right angles (90°) to the conductor, with nulls in the direction of the dipole. Neglecting electrical inefficiency, the antenna gain is equal to the directive gain, which is 1.5 (1.76 dBi) for a short dipole, increasing to 1.64 (2.15 dBi) for a half-wave dipole. For a 5/4 wave dipole the gain further increases to about 5.2 dBi, making this length desirable for that reason even though the antenna is then off-resonance. Longer dipoles than that have radiation patterns that are multi-lobed, with poorer gain (unless they are much longer) even along the strongest lobe. Other enhancements to the dipole (such as including a corner reflector or an array of dipoles) can be considered when more substantial directivity is desired. Such antenna designs, although based on the half-wave dipole, generally acquire their own names.  </p>
+Ideally, a half-wave dipole should be fed using a balanced transmission line matching its typical 65–70 Ω input impedance. Twin lead with a similar impedance is available but seldom used and does not match the balanced antenna terminals of most radio and television receivers. Much more common is the use of common 300 Ω twin lead in conjunction with a folded dipole. The driving point impedance of a half-wave folded dipole is 4 times that of a simple half-wave dipole, thus closely matching that 300 Ω characteristic impedance.[25] Most FM broadcast band tuners and older analog televisions include balanced 300 Ω antenna input terminals. However twin lead has the drawback that it is electrically disturbed by any other nearby conductor (including earth); it is never used for transmitting. 
+Many types of coaxial cable (or "coax") have a characteristic impedance of 75 Ω, which would otherwise be a good match for a half-wave dipole. However coax is a single-ended line whereas a center-fed dipole expects a balanced line (such as twin lead). By symmetry, one can see that the dipole's terminals have an equal but opposite voltage, whereas coax has one conductor grounded. Using coax regardless results in an unbalanced line, in which the currents along the two conductors of the transmission line are no longer equal and opposite. Since you then have a net current along the transmission line, the transmission line becomes an antenna itself, with unpredictable results (since it depends on the path of the transmission line).[26] This will generally alter the antenna's intended radiation pattern, and change the impedance seen at the transmitter or receiver. 
+A balun is required to use coaxial cable with a dipole antenna. The balun transfers power between the single-ended coax and the balanced antenna, sometimes with an additional change in impedance. A balun can be implemented as a transformer which also allows for an impedance transformation. This is usually wound on a ferrite toroidal core. The toroid core material must be suitable for the frequency of use, and in a transmitting antenna it must be of sufficient size to avoid saturation.[27] Other balun designs are mentioned below.[28][29] 
+</div>
+
+<form onsubmit="formExtractor.submitEdit()"></form>
+
+
+<div class="container">
+<p align=center style='text-align:center'>The dipole is inherently a balanced antenna, because it is bilaterally symmetrical.</p>
+<p> 
+Many types of array antennas are constructed using multiple dipoles, usually half-wave dipoles. The purpose of using multiple dipoles is to increase the directional gain of the antenna over the gain of a single dipole; the radiation of the separate dipoles interferes to enhance power radiated in desired directions. In arrays with multiple dipole driven elements, the feedline is split using an electrical network in order to provide power to the elements, with careful attention paid to the relative phase delays due to transmission between the common point and each element. 
+For a vertically oriented dipole, which has an omnidirectional radiation pattern in the horizontal plane, it is possible to stack dipoles end-to-end fed in phase, creating a collinear antenna array. The array still has an omnidirectional pattern, but more power is radiated in the desired horizontal directions and less at large angles up into the sky or down toward the Earth. Collinear arrays are used in the VHF and UHF frequency bands at which the size of the dipoles are small enough so several can be stacked on a mast. They are a practical and higher-gain alternative to quarter-wave ground plane antennas used in fixed base stations for mobile two-way radios, such as police, fire, and taxi dispatchers. 
+A reflective array antenna for radar consisting of numerous dipoles fed in-phase (thus realizing a broadside array) in front of a large reflector (horizontal wires) to make it uni-directional. On the other hand, an array of dipoles can be used to realize substantial directivity in a particular horizontal direction. In a broadside array the dipoles can again be arranged colinear (end to end), or side by side, or both. The antennas are then fed in the same phase. This creates greater gain in the direction perpendicular to the antennas, at the expense of most other directions. Unfortunately that also means that the direction opposite the desired direction also has a high gain, whereas high gain is usually desired in one single direction. The power which is wasted in the reverse direction, however, can be recovered using a large planar reflector, as is accomplished in the reflective array antenna, increasing the gain in the desired direction by another 3 dB 
+This large reflector can be avoided in the end-fire array. In this case the dipoles are again side by side, but are fed in different phases. Rather than being directive perpendicular to the line connecting their feedpoints, now the directivity is along the line connecting their feedpoints. By using an appropriate spacing and phasing, the radiation can be directed in a single direction along that line, with radiation mainly cancelled in the reverse direction as well as most other directions. 
+</p>
+</div>
+
+</body>
+
+</html>
+</div>
+
+<div class="footer"> <h2>Created using  ..........</h2>
+<form onsubmit="formExtractor.submitSimulate()">
+  <div class="bottomright"><input type="submit" value="Simulate"></div>
+</form>
+<form onsubmit="formExtractor.submitSubmit()">
+  <div class="bottomright2"><input type="submit" value="Submit"></div>
+</form>
+</div>
+
+<div class="contrib">
+  <h3>Content contributed by, Swapnil ........ Edited by .......! </h3>
+<form onsubmit="formExtractor.submit()">
+</form>
+</div>
