@@ -145,7 +145,7 @@ This large reflector can be avoided in the end-fire array. In this case the dipo
 
 <div class="footer"> <h2>Created using  ..........</h2>
 <form onsubmit="formExtractor.submitSimulate()">
-  <div class="bottomright"><input type="submit" value="Simulate"></div>
+  <div class="bottomright"><input type="submit" value="Check"></div>
 </form>
 <form onsubmit="formExtractor.submitSubmit()">
   <div class="bottomright2"><input type="submit" value="Submit"></div>
